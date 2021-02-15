@@ -1,0 +1,10 @@
+C:\Users\Craig.mcintosh\Documents\unchanged\updated6221\Infotrack - Copy\DataLibrary\bin\Debug\DataLibrary.dll
+C:\Users\Craig.mcintosh\Documents\unchanged\updated6221\Infotrack - Copy\DataLibrary\bin\Debug\DataLibrary.pdb
+C:\Users\Craig.mcintosh\Documents\unchanged\updated6221\Infotrack - Copy\DataLibrary\obj\Debug\DataLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Craig.mcintosh\Documents\unchanged\updated6221\Infotrack - Copy\DataLibrary\obj\Debug\DataLibrary.dll
+C:\Users\Craig.mcintosh\Documents\unchanged\updated6221\Infotrack - Copy\DataLibrary\obj\Debug\DataLibrary.pdb
+C:\Users\Craig.mcintosh\Documents\clean\with_better_sql_link\Infotrack - Copy\DataLibrary\bin\Debug\DataLibrary.dll
+C:\Users\Craig.mcintosh\Documents\clean\with_better_sql_link\Infotrack - Copy\DataLibrary\bin\Debug\DataLibrary.pdb
+C:\Users\Craig.mcintosh\Documents\clean\with_better_sql_link\Infotrack - Copy\DataLibrary\obj\Debug\DataLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Craig.mcintosh\Documents\clean\with_better_sql_link\Infotrack - Copy\DataLibrary\obj\Debug\DataLibrary.dll
+C:\Users\Craig.mcintosh\Documents\clean\with_better_sql_link\Infotrack - Copy\DataLibrary\obj\Debug\DataLibrary.pdb

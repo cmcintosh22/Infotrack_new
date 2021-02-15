@@ -1,0 +1,152 @@
+﻿@{
+    ViewData["Title"] = "Infotrack Page ";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to the Infotrack Page </h1>
+    <p>Please refer to the below fields and relate to the relevent information</p>
+    <br /> ------------------------
+</div>
+
+<br />
+
+<div class="text-center">
+
+    <form asp-controller="Scraper" asp-action="Calc" method="post">
+
+        <button type="submit">Find Google Position </button>
+
+
+    </form>
+
+</div>
+
+<br />
+
+@{ if (ViewBag.google != null)
+    {
+        <div class="text-center">
+
+            <h3 class="text-success">
+                Google search result position is:  @ViewBag.google  (including paid advertisements)
+                <br /> Total paid advertisements:  @ViewBag.ads
+                <br /> Google search result position is: @ViewBag.total  (excluding paid advertisements)
+
+            </h3>
+        </div>
+
+    }
+
+
+}
+
+<br />
+
+<div class="text-center">
+
+    <form asp-controller="Scraper" asp-action="stringUpdate" method="post">
+
+        <input type="text"
+               asp-controller="Calculate"
+               asp-action="Calc"
+               name="searchString"
+               placeholder="Insert Search Phrase" />
+
+        <button type="submit">Find Infotrack Google Position</button>
+
+
+
+    </form>
+
+</div>
+
+<br />
+
+@{ if (ViewBag.newurl != null && ViewBag.google_ns < 100)
+    {
+        <div class="text-center">
+            @{
+                        <h3 class="text-success">
+                            Google search result position is:  @ViewBag.google_ns (including paid advertisements)
+
+                        </h3>
+
+            }
+
+        </div>
+
+    }
+    else if (ViewBag.google_error == 101)
+    {
+        <div class="text-center">
+            @{
+                        <h3 class="text-danger">
+                            <br />Infotrack is not found in the top 100 search results for the submitted phrase: @ViewBag.test
+
+                        </h3>
+            }
+
+        </div>
+
+    }
+
+}
+
+<br />
+
+<div class="text-center">
+
+    <form asp-controller="Scraper" asp-action="urlUpdate" method="post">
+
+        <input type="text"
+               asp-controller="Calculate"
+               asp-action="Calc"
+               name="urlString"
+               placeholder="Insert Google Url" />
+
+        <button type="submit">Find Infotrack Google Position</button>
+                
+    </form>
+
+</div>
+
+<br />
+
+@{ if (ViewBag.newurl != null && ViewBag.google_url < 100)
+    {
+        <div class="text-center">
+            @{
+                        <h3 class="text-success">
+                            Google search result position is:   @ViewBag.google_url (including paid advertisements)
+
+                        </h3>
+
+            }
+
+        </div>
+
+    }
+    else if (ViewBag.google_error_url > 98)
+    {
+        <div class="text-danger">
+            @{
+                <h3 class="text-danger">
+                    <br />Infotrack is not found in the top 100 search results for the submitted phrase: @ViewBag.test_url
+
+                </h3>
+            }
+
+        </div>
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
